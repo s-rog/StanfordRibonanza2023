@@ -1,0 +1,49 @@
+att_fn: xmea
+aug_flip: true
+batch_size: 400
+d_heads: 48
+ffn_bias: false
+ffn_multi: 4
+fold: 0
+grad_accum_sched: {}
+grad_clip: 5
+layer_bpp: !!python/tuple
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+layer_gru: !!python/tuple
+- 1
+lr: 0.003
+lr_scale: 3
+lr_warmup: 0.01
+n_epochs: 100
+n_folds: 5
+n_heads: 6
+n_layers: 12
+noise_bpp: 0.025
+norm_rms: true
+note: ''
+p_dropout: 0.1
+pos_bias_params: !!python/tuple
+- 32
+- 128
+qkv_bias: false
+seed: 420
+sn_bias_sched:
+  0: -1.2
+  20: -1.1
+  40: -1.0
+  60: -0.9
+  80: -0.8
+tta_flip: true
+val_flip: false
+wt_decay: 0.1
