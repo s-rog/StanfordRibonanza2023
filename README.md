@@ -1,5 +1,6 @@
 # StanfordRibonanza2023
-This repo contains the code to recreate my models in the Stanford Ribonanza RNA Folding competition 2023 5th Place Solution on a single 4090.
+This repo contains my code for the 5th place solution of the Stanford Ribonanza RNA Folding competition 2023. All training was done on a single 4090.
+There are still some missing pieces but for now hopefully it serves as a readable reference.
 
 ### Summary
 1. A 5-fold ensemble is trained on the competition training data then used to create pseudo-labels by inferencing test data. The checkpoints are discarded.
@@ -13,5 +14,5 @@ Hyperparameters are set in `trainer.py` and it also serves as the entry point fo
 1. Install `requirements.txt`
 2. Download the preprocessed data from this kaggle dataset (WIP) and put them in `data/`
 3. Preprocess Eternafold BPP files (WIP)
-4. Set hyperparamers in `exp/trainer.py` according to the desired training stage
-5. (`chmod +x trainer.py`) `./trainer.py`
+4. Set hyperparamers in `trainer.py` according to the desired training stage
+5. (`cd exp && chmod +x trainer.py`) `./trainer.py`
