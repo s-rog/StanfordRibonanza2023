@@ -1,6 +1,6 @@
 # StanfordRibonanza2023
 This repo contains my code for the 5th place solution of the Stanford Ribonanza RNA Folding competition 2023. All training was done on a single 4090.
-There are still some missing pieces but for now hopefully it serves as a readable reference.
+There are still some missing pieces but for now hopefully it serves as a readable reference. The 5-fold ensemble by itself achieves a LB score of 0.14034 public and 0.1423 private.
 
 ### Summary
 1. A 5-fold ensemble is trained on the competition training data then used to create pseudo-labels by inferencing test data. The checkpoints are discarded.
